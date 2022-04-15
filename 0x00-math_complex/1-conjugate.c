@@ -6,7 +6,7 @@
  */
 complex conjugate(complex c)
 {
-	c.re *= -1;
+	c.re *= c.re, c.re /= c.re;
 	c.im *= -1;
 	return (c);
 }
