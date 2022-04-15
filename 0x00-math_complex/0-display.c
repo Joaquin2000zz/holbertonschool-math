@@ -7,6 +7,7 @@
 void display_complex_number(complex c)
 {
 	int flag = 0;
+
 	if (c.re != 0)
 	{
 		printf("%d", c.re);
@@ -21,9 +22,9 @@ void display_complex_number(complex c)
 			printf("%di", c.im);
 			flag = 1;
 		}
-	if (c.im < - 1)
+	if (c.im < -1)
 	{
-		printf("%di", c.im * - 1);
+		printf("%di", c.im * -1);
 		flag = 1;
 	}
 	if (c.im == 1 || c.im == -1)
