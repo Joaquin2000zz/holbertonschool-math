@@ -9,9 +9,9 @@
  */
 void multiplication(complex c1, complex c2, complex *c3)
 {
-	int ac = c1.re * c2.re;
-	int ad = c1.re * c2.im;
-	int bc = c1.im * c2.re;
-	int bd = - (c1.im * c2.im);
+	double ac = c1.re * c2.re;
+	double ad = c1.re * c2.im;
+	double bc = c1.im * c2.re;
+	double bd = - (c1.im * c2.im);
 	(*c3).re = ac + bd, c3->im = ad + bc;
 }
