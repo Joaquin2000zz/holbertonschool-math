@@ -12,8 +12,12 @@ void display_complex_number(complex c)
 		printf("%d", c.re);
 		if (c.im > 0)
 			printf(" + ");
+		if (c.im < 0)
+			printf("-");
 	}
-	if (c.im > 0)
+	if (c.im > 1 || c.im < -1)
 		printf("%di", c.im);
+	if (c.im == 1 || c.im == -1)
+		printf("i");
 	printf("\n");
 }
