@@ -2,7 +2,7 @@
 /**
  * display_complex_number - displays complex numbers
  * @c: an struct which contains the complex field of a number
- * Return: void function
+ * Return: the conjugate
  */
 complex conjugate(complex c)
 {
