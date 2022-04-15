@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <stddef.h>
+#include <math.h>
+
 /**
  * struct complex - struct which is the complex field of numbers
  * @re: the real part
@@ -18,5 +20,6 @@ typedef struct complex
 
 void display_complex_number(complex c);
 complex conjugate(complex c);
+double modulus(complex c);
 
 #endif
