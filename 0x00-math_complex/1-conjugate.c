@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * display_complex_number - displays complex numbers
  * @c: an struct which contains the complex field of a number
@@ -6,7 +7,6 @@
  */
 complex conjugate(complex c)
 {
-	c.re *= c.re, c.re /= c.re;
-	c.im *= -1;
+	c.im = -c.im;
 	return (c);
 }
