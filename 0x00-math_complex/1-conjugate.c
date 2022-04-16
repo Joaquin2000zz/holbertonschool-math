@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * display_complex_number - displays complex numbers
+ * conjugate - makes the conjugate of a complex number
  * @c: an struct which contains the complex field of a number
  * Return: the conjugate
  */
