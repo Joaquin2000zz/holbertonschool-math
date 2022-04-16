@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * display_complex_number - displays complex numbers
+ * conjugate - the conjugate of a complex number
  * @c: an struct which contains the complex field of a number
  * Return: the conjugate
  */
@@ -23,7 +23,7 @@ void division(complex c1, complex c2, complex *c3)
 	complex cDen = conjugate(c2);
 	double ac = c1.re * cDen.re, ad = c1.re * cDen.im;
 	double bc = c1.im * cDen.re, bd = -(c1.im * cDen.im);
-	double cc = c2.re * cDen.re, dd = c2.im * c2.im;
+	double cc = c2.re * cDen.re, dd = (c2.im * cDen.im) * -1;
 	double ccdd = cc + dd;
 	(*c3).re = (ac + bd) / ccdd, c3->im = (ad + bc) / ccdd;
 }
