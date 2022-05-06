@@ -44,7 +44,6 @@ t_cell *heron(double p, double u0)
 	while (1)
 	{
 		xn = 0.5 * (xn + (p / xn));
-		printf("%.10f\n", xn);
 		if (xn == x)
 			break;
 		add_nodeint(&head, xn);
