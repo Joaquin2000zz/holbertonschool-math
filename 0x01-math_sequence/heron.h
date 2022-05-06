@@ -3,7 +3,6 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-#include <math.h>
 /**
  * struct complex - struct which is the complex field of numbers
  * @re: the real part
