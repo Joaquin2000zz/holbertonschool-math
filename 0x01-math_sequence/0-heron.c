@@ -1,5 +1,4 @@
 #include "heron.h"
-#include <stdio.h>
 
 /**
  * add_nodeint - adds a new node at the end of a listint_t list.
@@ -38,19 +37,21 @@ t_cell *heron(double p, double u0)
 {
 	double x = p, xn = u0;
 	int i = 0;
-	t_cell *head = NULL;
+	t_cell *head = NULL, *aux;
 
 	add_nodeint(&head, u0);
 
 	while (1)
 	{
 		xn = 0.5 * (xn + (p / xn));
-		if (floor(10000000 * xn) / 10000000 ==
-		    floor(10000000 * x) / 10000000)
+		printf("%.10f\n", xn);
+		if (xn == x)
 			break;
 		add_nodeint(&head, xn);
 		x = xn;
 		i++;
 	}
+	aux = head, head = head->next, free(aux);
+
 	return (head);
 }
