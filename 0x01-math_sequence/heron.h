@@ -4,9 +4,9 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * struct complex - struct which is the complex field of numbers
- * @re: the real part
- * @im: the imaginary part
+ * struct cell - struct which containts the values of the heron sequence
+ * @elt: xn value
+ * @next: pointer to the next node
  *
  * Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
  */
@@ -17,5 +17,5 @@ typedef struct cell
 } t_cell;
 
 t_cell *heron(double p, double u0);
-	
+
 #endif
