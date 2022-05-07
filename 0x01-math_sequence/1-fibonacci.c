@@ -60,6 +60,7 @@ t_cell *Fibonnaci()
 	t_cell *head = NULL, *aux = NULL;
 
 
+	add_nodeint(&head, (int)xn);
 	while (1)
 	{
 		Naux = xn;
