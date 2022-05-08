@@ -66,11 +66,11 @@ t_cell *Fibonnaci()
 		Naux = xn;
 		xn = x + xn;
 		x = Naux;
-		printf("aproach = %.10f golden ratio = %.10f\n", xn / x, (Heron(5) + 1) / 2);
+
 		/* (sqrt(5) + 1) / 2 = golden ratio */
-		/**if (floor(100000000 * (xn / x)) / 100000000 ==
+		if (floor(100000000 * (xn / x)) / 100000000 ==
 		    floor(100000000 * (Heron(5) + 1) / 2) / 100000000)
-			break;*/
+			break;
 		add_nodeint(&head, (int)xn);
 	}
 	aux = head;
