@@ -16,7 +16,7 @@ double rectangle_method(double a, double b, int steps)
 		/* The width of rectangle i is equal to: */
 		width = (b - a) / steps;
 		/* The height of rectangle i is equal to: */
-		height = 1 + ((a + ((ith_rectangle - 1) * width)) * (a + ((ith_rectangle - 1) * width)));
+		height = 1 + ((a + ((ith_rectangle) * width)) * (a + ((ith_rectangle) * width)));
 		rectangleApproaching += width / height;
 		/*printf(\"el area del rectangilo es %f\n\", areaOfRectangle);*/
 	}
