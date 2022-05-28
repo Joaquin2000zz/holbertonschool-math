@@ -1,5 +1,4 @@
 #include "rectangle.h"
-#include <stdio.h>
 
 /**
  * rectangle_method - integral dx / (1 + x^2) in between the [0, 1] interval
