@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * rectangle_method - area under dx / (1 + x^2) in between the [0, 1] interval
+ * rectangle_method - integral dx / (1 + x^2) in between the [0, 1] interval
  * @a: interval begin
  * @b: interval end
  * Return: The Rectangle approximation of the Integral
